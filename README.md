@@ -8,31 +8,37 @@ frontend: Contém o código da interface de usuário desenvolvida em React.
 backend: Contém os arquivos necessários para simular um servidor JSON utilizando JSON Server.
 
 Como Rodar o Projeto
-Requisitos
+Requisitos:
 
 Node.js instalado
 
-Configuração
+Configurações:
 
 Clone o Repositório:
 
-bash
+    git clone https://github.com/lucasocrack/CrudCadastro.git
 
-    git clone https://github.com/seu-usuario/seu-projeto.git
-    cd seu-projeto
+Acesse o a pasta     
+    cd CrudCadastro
 
 Instale as Dependências do Frontend:
 
-bash
+Acesse a pasta:
 
     cd frontend
+
+Em seguida instale dependências:
+
     npm install
 
 Instale as Dependências do Backend:
 
-bash
+Acesse a pasta do backend:
 
     cd ../backend
+
+Em seguida instale dependências:
+
     npm install
 
 Rodando o Projeto
@@ -40,9 +46,12 @@ Frontend
 
 Inicie o Servidor de Desenvolvimento:
 
-bash
+Acesse a pasta:
 
     cd ../frontend
+
+Em seguida inicialize o frontend usando:
+
     npm start
 
 O aplicativo estará disponível em http://localhost:3000.
@@ -51,10 +60,12 @@ Backend
 
 Inicie o JSON Server:
 
-    cd ../backend
+Abra um novo terminal e navegue ate a pasta do backend, em seguida inicie o mesmo com comando:
+
     npm start
 
 O servidor JSON estará disponível em http://localhost:3001. Os dados são servidos a partir do arquivo db.json na pasta backend.
+Caso inicie o backend em porta diferente mesma precisara ser alterada no frontend no arquivo "UserCrud.jsx" na linha 11
 
 Notas Adicionais
 
