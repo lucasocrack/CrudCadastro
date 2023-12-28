@@ -2,8 +2,9 @@ import './Nav.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default props =>
-    <aside className="menu-area">
+function Nav (props) {
+    return(
+        <aside className="menu-area">
         <nav className="menu">
             {/* Refatorar em casa! */}
             <Link to="/">
@@ -14,3 +15,7 @@ export default props =>
             </Link>
         </nav>
     </aside>
+    )
+}
+  
+export default Nav
